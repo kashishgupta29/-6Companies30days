@@ -1,5 +1,7 @@
 // 1823. Find the Winner of the Circular Game
-
+#include <iostream>
+#include <algorithm>
+using namespace std;
 class Solution
 {
 public:
@@ -11,3 +13,10 @@ public:
   }
   int findTheWinner(int n, int k) { return helper(n, k) + 1; }
 };
+int main()
+{
+  int n, k;
+  cin >> n >> k;
+  Solution s;
+  cout << s.findTheWinner(n, k);
+}
