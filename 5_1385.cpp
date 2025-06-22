@@ -23,7 +23,6 @@ public:
           break;
         }
       }
-
       if (found)
         count++;
     }
